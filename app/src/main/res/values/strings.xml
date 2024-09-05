@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">MyApp</string>
-    <string name="recuperar_senha">recuperar_senha</string>
+    <string name="recuperar_senha">recuperar senha</string>
     <string name="cadastrar">cadastrar</string>
     <string name="entrar">entrar</string>
+    <string name="senha">Senha</string>
+    <string name="e_mail">E-mail</string>
 </resources>
