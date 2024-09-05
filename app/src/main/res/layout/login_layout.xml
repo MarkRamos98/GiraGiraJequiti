@@ -90,3 +90,5 @@
             tools:ignore="DuplicateIds" />
 
     </RelativeLayout>
+
+</LinearLayout>
