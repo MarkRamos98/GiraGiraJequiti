@@ -25,7 +25,10 @@ public class SplashActivity extends AppCompatActivity {
             return insets;
         });
         //Randomificando tempo
-        new Random()
+        Random random = new Random(10000);
+
+        int aleatorio = random.nextInt();
+        aleatorio += 1000;
 
         //Abre a janela
 
@@ -36,7 +39,7 @@ public class SplashActivity extends AppCompatActivity {
                 startActivity(new Intent(getApplicationContext(),LoginActivity.class));
                 finish();
             }
-        },16000);
+        },aleatorio);
 
     }
 }
