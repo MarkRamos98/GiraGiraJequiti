@@ -1,12 +1,15 @@
 package br.com.etecia.myapp;
 
 import android.os.Bundle;
+import android.os.Handler;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+
+import java.util.Random;
 
 public class SplashActivity extends AppCompatActivity {
 
@@ -20,5 +23,15 @@ public class SplashActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        //Abre a janela
+
+        //Instanciando Handler
+        new Handler().postDelayed(new Runnable(){
+            @Override
+            public void run() {
+
+            }
+        },5000);
+
     }
 }
