@@ -89,7 +89,7 @@
             android:layout_gravity="center_horizontal"
             android:text="@string/recuperar_senha"
             app:cornerRadius="0dp"
-            tools:ignore="DuplicateIds" />
+            tools:ignore="DuplicateIds,RelativeOverlap" />
 
     </RelativeLayout>
 

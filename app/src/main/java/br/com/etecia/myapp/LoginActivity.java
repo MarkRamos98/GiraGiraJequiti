@@ -11,7 +11,7 @@ import androidx.core.view.WindowInsetsCompat;
 import com.google.android.material.button.MaterialButton;
 
 public class LoginActivity extends AppCompatActivity {
-MaterialButton btorecuperar, btocadastro,btoentrar;
+MaterialButton btorecuperar,btocadastro,btoentrar;
 
 
     @Override
@@ -24,5 +24,14 @@ MaterialButton btorecuperar, btocadastro,btoentrar;
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        //apresentando a variavel java para o xml
+        btocadastro = findViewById(R.id.btocadastro);
+        btorecuperar = findViewById(R.id.btorecuperar);
+        btoentrar = findViewById(R.id.btoentrar);
+
+        //criando ações para os botões
+
+
     }
 }
