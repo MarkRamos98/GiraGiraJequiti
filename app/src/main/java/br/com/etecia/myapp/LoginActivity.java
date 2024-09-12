@@ -1,6 +1,7 @@
 package br.com.etecia.myapp;
 
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -31,7 +32,12 @@ MaterialButton btorecuperar,btocadastro,btoentrar;
         btoentrar = findViewById(R.id.btoentrar);
 
         //criando ações para os botões
+        btocadastro.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
+            }
+        });
 
     }
 }
