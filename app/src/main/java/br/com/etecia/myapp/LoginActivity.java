@@ -8,7 +8,11 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.google.android.material.button.MaterialButton;
+
 public class LoginActivity extends AppCompatActivity {
+MaterialButton btorecuperar, btocadastro,btoentrar;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
