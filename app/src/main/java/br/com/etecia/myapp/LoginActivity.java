@@ -1,5 +1,6 @@
 package br.com.etecia.myapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
@@ -36,8 +37,18 @@ MaterialButton btorecuperar,btocadastro,btoentrar;
             @Override
             public void onClick(View v) {
 
+                startActivity(new Intent(getApplicationContext(),CadastrarActivity.class));
+
             }
         });
 
+        btorecuperar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                startActivity(new Intent(getApplicationContext(), Recuperado_activity.class));
+
+            }
+        });
     }
 }
