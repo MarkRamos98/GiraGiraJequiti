@@ -48,11 +48,12 @@ public class LoginActivity extends AppCompatActivity {
                 email = TxtEmail.getText().toString().trim();
                 senha = TxtSenha.getText().toString().trim();
 
-                if (email.equals('etecia') && senha.equals("etecia")) {
+                if (email.equals("etecia") && senha.equals("etecia")) {
                     startActivity(new Intent(getApplicationContext(), MenuActivity.class));
                     finish();
                 }else{
-                    Toast.makeText().show();
+                    Toast.makeText(getApplicationContext(),"Usuário ou Senha Inválidos",
+                            Toast.LENGTH_LONG).show();
                 }
             }
         });
