@@ -26,12 +26,9 @@ MaterialToolbar recretorno;
         });
 
         recretorno=findViewById(R.id.recretorno);
-        recretorno.setNavigationOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(),LoginActivity.class));
-                finish();
-            }
+        recretorno.setNavigationOnClickListener(v -> {
+            startActivity(new Intent(getApplicationContext(),LoginActivity.class));
+            finish();
         });
 
     }

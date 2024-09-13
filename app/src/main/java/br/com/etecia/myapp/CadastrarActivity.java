@@ -27,12 +27,9 @@ MaterialToolbar idcadretorno;
         });
         idcadretorno=findViewById(R.id.idcadretorno);
 
-        idcadretorno.setNavigationOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(),LoginActivity.class));
-                finish();
-            }
+        idcadretorno.setNavigationOnClickListener(v -> {
+            startActivity(new Intent(getApplicationContext(),LoginActivity.class));
+            finish();
         });
 
     }

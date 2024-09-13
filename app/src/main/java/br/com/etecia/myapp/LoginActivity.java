@@ -1,5 +1,8 @@
 package br.com.etecia.myapp;
 
+import static br.com.etecia.myapp.R.id.TextEmail;
+import static br.com.etecia.myapp.R.id.TextSenha;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -13,7 +16,6 @@ import androidx.core.view.WindowInsetsCompat;
 
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.textfield.TextInputEditText;
-import com.google.android.material.textfield.TextInputLayout;
 
 public class LoginActivity extends AppCompatActivity {
     MaterialButton btorecuperar, btocadastro, btoentrar;
@@ -40,41 +42,34 @@ public class LoginActivity extends AppCompatActivity {
 
         //criando ações para os botões
 
-        btoentrar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String email, senha;
+        btoentrar.setOnClickListener(this::onClick);
 
-                email = TxtEmail.getText().toString().trim();
-                senha = TxtSenha.getText().toString().trim();
+        btocadastro.setOnClickListener(v -> {
 
-                if (email.equals("etecia") && senha.equals("etecia")) {
-                    startActivity(new Intent(getApplicationContext(), MenuActivity.class));
-                    finish();
-                }else{
-                    Toast.makeText(getApplicationContext(),"Usuário ou Senha Inválidos",
-                            Toast.LENGTH_LONG).show();
-                }
-            }
+            startActivity(new Intent(getApplicationContext(), CadastrarActivity.class));
+            finish();
+
         });
 
-        btocadastro.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        btorecuperar.setOnClickListener(v -> {
 
-                startActivity(new Intent(getApplicationContext(), CadastrarActivity.class));
-                finish();
-
-            }
+            startActivity(new Intent(getApplicationContext(), Recuperado_activity.class));
+            finish();
         });
+    }
 
-        btorecuperar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        private void onClick(View v) {
+        String email, senha;
 
-                startActivity(new Intent(getApplicationContext(), Recuperado_activity.class));
-                finish();
-            }
-        });
+        email = TxtEmail.getText().toString().trim();
+        senha = TxtSenha.getText().toString().trim();
+
+        if (email.equals("etecia") && senha.equals("etecia")) {
+            startActivity(new Intent(getApplicationContext(), MenuActivity.class));
+            finish();
+        } else {
+            Toast.makeText(getApplicationContext(), "Usuário ou Senha Inválidos",
+                    Toast.LENGTH_LONG).show();
+        }
     }
 }
