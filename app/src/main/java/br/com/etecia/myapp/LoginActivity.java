@@ -38,6 +38,7 @@ MaterialButton btorecuperar,btocadastro,btoentrar;
             public void onClick(View v) {
 
                 startActivity(new Intent(getApplicationContext(),CadastrarActivity.class));
+                finish();
 
             }
         });
@@ -47,7 +48,7 @@ MaterialButton btorecuperar,btocadastro,btoentrar;
             public void onClick(View v) {
 
                 startActivity(new Intent(getApplicationContext(), Recuperado_activity.class));
-
+                finish();
             }
         });
     }
