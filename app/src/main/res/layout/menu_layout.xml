@@ -62,7 +62,7 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="200dp"
-                    android:src="@drawable/bicycle" />
+                    android:src="@drawable/aapa" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -118,7 +118,7 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="200dp"
-                    android:src="@drawable/bicycle" />
+                    android:src="@drawable/dicas" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -150,7 +150,7 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="200dp"
-                    android:src="@drawable/bicycle" />
+                    android:src="@drawable/mapa" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -174,7 +174,7 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="200dp"
-                    android:src="@drawable/bicycle" />
+                    android:src="@drawable/calendar_event" />
 
                 <TextView
                     android:layout_width="wrap_content"
