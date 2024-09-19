@@ -6,4 +6,5 @@
     <string name="senha">Senha</string>
     <string name="e_mail">E-mail</string>
     <string name="menu_principal">Menu Principal</string>
+    <string name="todo">TODO</string>
 </resources>
