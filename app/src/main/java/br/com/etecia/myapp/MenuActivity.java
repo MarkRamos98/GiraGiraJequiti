@@ -12,7 +12,8 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MenuActivity extends AppCompatActivity implements View.OnClickListener {
-CardView bike, acessorios, manutencao, locais, dicas, eventos;
+    CardView bike, acessorios, manutencao, locais, dicas, eventos;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,22 +30,34 @@ CardView bike, acessorios, manutencao, locais, dicas, eventos;
         locais = findViewById(R.id.menulocais);
         dicas = findViewById(R.id.menudicas);
         eventos = findViewById(R.id.menuevent);
+
+        bike.setOnClickListener(this);
+        acessorios.setOnClickListener(this);
+        manutencao.setOnClickListener(this);
+        dicas.setOnClickListener(this);
+        locais.setOnClickListener(this);
+        eventos.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
-        if (v.getId() == R.id.menubicycle){
-            startActivity(new Intent(getApplicationContext(),Bike_Activity.class));
-        }if (v.getId() == R.id.menugadgets){
-            startActivity(new Intent(getApplicationContext(),AcessoriosActivity.class));
-        }if (v.getId() == R.id.menumanutencao){
-            startActivity(new Intent(getApplicationContext(),ManutencaoActivity.class));
-        }if (v.getId() == R.id.menudicas){
-            startActivity(new Intent(getApplicationContext(),DicasActivity.class));
-        }if (v.getId() == R.id.menulocais){
-            startActivity(new Intent(getApplicationContext(),LocaisActivity.class));
-        }if (v.getId() == R.id.menuevent){
-            startActivity(new Intent(getApplicationContext(),EventosActivity.class));
+        if (v.getId() == R.id.menubicycle) {
+            startActivity(new Intent(getApplicationContext(), Bike_Activity.class));
+        }
+        if (v.getId() == R.id.menugadgets) {
+            startActivity(new Intent(getApplicationContext(), AcessoriosActivity.class));
+        }
+        if (v.getId() == R.id.menumanutencao) {
+            startActivity(new Intent(getApplicationContext(), ManutencaoActivity.class));
+        }
+        if (v.getId() == R.id.menudicas) {
+            startActivity(new Intent(getApplicationContext(), DicasActivity.class));
+        }
+        if (v.getId() == R.id.menulocais) {
+            startActivity(new Intent(getApplicationContext(), LocaisActivity.class));
+        }
+        if (v.getId() == R.id.menuevent) {
+            startActivity(new Intent(getApplicationContext(), EventosActivity.class));
         }
     }
 }
