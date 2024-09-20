@@ -74,7 +74,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:text="@string/acess_rios" />
+                    android:text="@string/acessorios" />
 
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -109,7 +109,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:text="@string/manuten_o" />
+                    android:text="@string/manutencao" />
 
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -136,7 +136,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:text="Dicas" />
+                    android:text="@string/dicas" />
 
             </LinearLayout>
         </androidx.cardview.widget.CardView>
