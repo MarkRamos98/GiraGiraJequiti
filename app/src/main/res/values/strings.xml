@@ -7,4 +7,8 @@
     <string name="e_mail">E-mail</string>
     <string name="menu_principal">Menu Principal</string>
     <string name="todo">TODO</string>
+    <string name="eventos">Eventos</string>
+    <string name="manuten_o">Manutenção</string>
+    <string name="bikes">Bikes</string>
+    <string name="acess_rios">Acessórios</string>
 </resources>
