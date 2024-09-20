@@ -1,5 +1,6 @@
 package br.com.etecia.myapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
@@ -32,6 +33,18 @@ CardView bike, acessorios, manutencao, locais, dicas, eventos;
 
     @Override
     public void onClick(View v) {
-
+        if (v.getId() == R.id.menubicycle){
+            startActivity(new Intent(getApplicationContext(),Bike_Activity.class));
+        }if (v.getId() == R.id.menugadgets){
+            startActivity(new Intent(getApplicationContext(),AcessoriosActivity.class));
+        }if (v.getId() == R.id.menumanutencao){
+            startActivity(new Intent(getApplicationContext(),ManutencaoActivity.class));
+        }if (v.getId() == R.id.menudicas){
+            startActivity(new Intent(getApplicationContext(),DicasActivity.class));
+        }if (v.getId() == R.id.menulocais){
+            startActivity(new Intent(getApplicationContext(),LocaisActivity.class));
+        }if (v.getId() == R.id.menuevent){
+            startActivity(new Intent(getApplicationContext(),EventosActivity.class));
+        }
     }
 }
