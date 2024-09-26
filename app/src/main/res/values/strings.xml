@@ -13,4 +13,7 @@
     <string name="acessorios">Acessórios</string>
     <string name="locais">Locais</string>
     <string name="dicas">Dicas</string>
+    <string name="doacao">Doação</string>
+    <string name="usadas">Usadas</string>
+    <string name="novas">Novas</string>
 </resources>
