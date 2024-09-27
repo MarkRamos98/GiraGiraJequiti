@@ -45,4 +45,10 @@
 
     </com.google.android.material.tabs.TabLayout>
 
+    <androidx.viewpager2.widget.ViewPager2
+        android:background="#000"
+        android:id="@+id/ViewPagerBikes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
 </LinearLayout>
