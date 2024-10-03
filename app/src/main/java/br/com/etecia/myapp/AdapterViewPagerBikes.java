@@ -1,5 +1,7 @@
 package br.com.etecia.myapp;
 
+import android.widget.Switch;
+
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
@@ -18,14 +20,27 @@ public class AdapterViewPagerBikes extends FragmentStateAdapter {
     @Override
     public Fragment createFragment(int position) {
 
-        return null;
+        switch (position) {
+
+            case 0:
+                return new BikesNovasFragment();
+            case 1:
+                return new BikesUsadasFragment();
+            case 2:
+                return new BikesDoacaoFragment();
+            default:
+                return new BikesNovasFragment();
+
+            return null;
+
+        }
 
     }
 
     @Override
     public int getItemCount() {
 
-        return 0;
+        return 3;
 
     }
 
