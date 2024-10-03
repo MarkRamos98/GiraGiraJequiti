@@ -31,8 +31,6 @@ public class AdapterViewPagerBikes extends FragmentStateAdapter {
             default:
                 return new BikesNovasFragment();
 
-            return null;
-
         }
 
     }
