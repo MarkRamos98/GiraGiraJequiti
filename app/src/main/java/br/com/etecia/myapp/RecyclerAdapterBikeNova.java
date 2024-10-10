@@ -4,6 +4,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
+import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 public class RecyclerAdapterBikeNova extends RecyclerView.Adapter<RecyclerAdapterBikeNova.ViewHolder> {
@@ -24,11 +25,14 @@ public class RecyclerAdapterBikeNova extends RecyclerView.Adapter<RecyclerAdapte
         return 0;
     }
 
-    public class ViewHolder extends RecyclerView.ViewHolder{
+        public class ViewHolder extends RecyclerView.ViewHolder{
 
+            CardView modeloBikeNova;
 
-        public ViewHolder(@NonNull View itemView) {
-            super(itemView);
+            public ViewHolder(@NonNull View itemView) {
+                super(itemView);
+
+                modeloBikeNova = itemView.findViewById(R.id.modeloBikeNova);
         }
     }
 
