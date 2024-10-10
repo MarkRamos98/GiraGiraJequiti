@@ -11,14 +11,15 @@
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-        
+
         <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/IdToolbarBike"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:navigationIcon="@drawable/baseline_keyboard_arrow_left"
             app:title="BIKES"
-            app:titleCentered="true"/>
-        
+            app:titleCentered="true" />
+
     </com.google.android.material.appbar.AppBarLayout>
 
     <com.google.android.material.tabs.TabLayout
