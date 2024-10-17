@@ -10,17 +10,20 @@
         android:orientation="vertical">
 
         <ImageView
+            android:id="@+id/idModeloImagemBikeNova"
             android:layout_width="match_parent"
             android:layout_height="250dp"
             android:src="@drawable/batma"
             android:scaleType="centerCrop"/>
 
         <TextView
+            android:id="@+id/idmodeloTituloBikeNova"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="5sp"
-            android:text="Batman"
+            android:text="@string/batman"
+            android:contentDescription="@string/bicicleta"
             android:textColor="#FF0101"
             android:textSize="25sp"
             android:textStyle="bold" />
