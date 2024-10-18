@@ -16,7 +16,7 @@
             android:layout_height="250dp"
             android:src="@drawable/batma"
             android:scaleType="centerCrop"
-            android:contentDescription="Batman"/>
+            android:contentDescription="@string/batman"/>
 
         <TextView
             android:id="@+id/idmodeloTituloBikeNova"
