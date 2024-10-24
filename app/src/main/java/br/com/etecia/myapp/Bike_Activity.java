@@ -37,7 +37,7 @@ public class Bike_Activity extends AppCompatActivity {
         IdToolbarBike.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(),MenuActivity.class));
+                startActivity(new Intent(getApplicationContext(), MenuActivity.class));
                 finish();
             }
         });
@@ -54,19 +54,16 @@ public class Bike_Activity extends AppCompatActivity {
             public void onTabSelected(TabLayout.Tab tab) {
 
 
-
             }
 
             @Override
             public void onTabUnselected(TabLayout.Tab tab) {
 
 
-
             }
 
             @Override
             public void onTabReselected(TabLayout.Tab tab) {
-
 
 
             }
@@ -81,7 +78,6 @@ public class Bike_Activity extends AppCompatActivity {
 
             }
         });
-
 
 
     }
